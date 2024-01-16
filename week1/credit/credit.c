@@ -2,6 +2,7 @@
 /* This file conforms to C99 */
 
 /*
+  check50 cs50/problems/2024/x/credit
   Build Instructions: 
   CFLAGS=-lcs50  make credit
  */
