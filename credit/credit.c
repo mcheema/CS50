@@ -1,3 +1,12 @@
+/*  -*- mode: C -*- */
+/* This file conforms to C99 */
+
+/*
+  Build Instructions: 
+  clang -std=c99 -Wall -Wextra  -lcs50 credit.c -g -o credit -O3
+ */
+
+
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
@@ -9,14 +18,14 @@ int main(void)
     long card_number = get_long("Please Enter the Credit Card number: ");
     /* Implement Luhn's Algorithm */
     char digits[MAX_DIGITS + 1];
-    sprintf(digits, "%ld", card_number);
+    sprintf(digits, "%li", card_number);
     int n = strlen(digits);
     int cumsum = 0;
     for (int i = n - 1; i > 0; i -= 2)
     {
         int prod = 2 * (digits[i - 1] - '0');
         char prodstr[3];
-        sprintf(prodstr, "%d", prod);
+        sprintf(prodstr, "%i", prod);
         int len = strlen(prodstr);
         for (int j = 0; j < len; j++)
             cumsum += (prodstr[j] - '0');
@@ -28,7 +37,7 @@ int main(void)
     }
 
     char sumstr[4];
-    sprintf(sumstr, "%d", cumsum);
+    sprintf(sumstr, "%i", cumsum);
     int len = strlen(sumstr);
     char output[11]; /* big enough for MASTERCARD */
     /* Conditional which tests whether Luhn's Algorithm Passed */
