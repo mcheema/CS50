@@ -6,34 +6,41 @@
   clang -std=c99 -Wall -Wextra  -lcs50 credit.c -g -o credit -O3
  */
 
-
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
 
 #define MAX_DIGITS 19 /* get_long ensures that we have a valid long  */
+#define VALUE(digit) (digit - '0')
+#define ZERO '0'
 
 int main(void)
 {
+    /* get card number from the user */
     long card_number = get_long("Please Enter the Credit Card number: ");
+
     /* Implement Luhn's Algorithm */
+    /* covert number to a string of digits */
     char digits[MAX_DIGITS + 1];
     sprintf(digits, "%li", card_number);
     int n = strlen(digits);
     int cumsum = 0;
+
+    /* For every other digit beginning with the second last */
     for (int i = n - 1; i > 0; i -= 2)
     {
-        int prod = 2 * (digits[i - 1] - '0');
+        int prod = 2 * VALUE(digits[i - 1]);
         char prodstr[3];
         sprintf(prodstr, "%i", prod);
         int len = strlen(prodstr);
         for (int j = 0; j < len; j++)
-            cumsum += (prodstr[j] - '0');
+        cumsum += VALUE(prodstr[j]);
     }
 
+    /* for every other digit beginning with the last */
     for (int i = n; i > 0; i -= 2)
     {
-        cumsum += (digits[i - 1] - '0');
+        cumsum += VALUE(digits[i - 1]);
     }
 
     char sumstr[4];
@@ -41,7 +48,7 @@ int main(void)
     int len = strlen(sumstr);
     char output[11]; /* big enough for MASTERCARD */
     /* Conditional which tests whether Luhn's Algorithm Passed */
-    if (sumstr[len - 1] == '0')
+    if (sumstr[len - 1] == ZERO)
     { /* Branch corresponding to VALID from Luhn's Algorithm */
         /* Switch on the first digit to partially disambiguate potential Card issuers */
         switch (digits[0])
