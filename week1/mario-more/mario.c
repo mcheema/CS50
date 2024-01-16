@@ -10,9 +10,9 @@
 #include <cs50.h>
 #include <stdio.h>
 
-#define MAXHEIGHT 8             /* Per specifications */
-#define MINHEIGHT 1             /* Per specifications */
-#define PYRAMID_CHAR '#'        /* Per specifications */
+#define MAXHEIGHT 8      /* Per specifications */
+#define MINHEIGHT 1      /* Per specifications */
+#define PYRAMID_CHAR '#' /* Per specifications */
 
 void print_row(int row, int height);
 int main(void)
@@ -38,11 +38,11 @@ void print_row(int row, int height)
     {
         printf("%c", (i > height - row - 1) ? PYRAMID_CHAR : ' ');
     }
-    printf("  ");               /* print the gap */
+    printf("  "); /* print the gap */
     /* print the section after the gap */
     for (int i = 0; i <= row; i++)
     {
         printf("%c", PYRAMID_CHAR);
     }
-    printf("\n");               /* end of row */
+    printf("\n"); /* end of row */
 }
