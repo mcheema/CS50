@@ -24,6 +24,7 @@ int main(void)
     }
     while (height > MAXHEIGHT || height < MINHEIGHT);
 
+    /* print each row beginning with the bottom row */
     for (int i = 0; i < height; i++)
     {
         print_row(i, height);
