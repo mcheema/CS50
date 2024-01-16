@@ -8,9 +8,10 @@ a.out
 *.log
 *.aux
 *.pdf
-mario-more/mario
-credit/credit
-debug/debug
-half/half
-prime/prime
-population/population
+week1/mario-more/mario
+week1/credit/credit
+week1/debug/debug
+week1/half/half
+week1/prime/prime
+week1/population/population
+week1/debug/debug
