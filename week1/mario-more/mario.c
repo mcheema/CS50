@@ -2,7 +2,7 @@
 /* This file conforms to C99 */
 
 /*
-  check50 s50/problems/2024/x/mario/more
+  check50 cs50/problems/2024/x/mario/more
   Build Instructions: 
   clang -std=c99 -Wall -Wextra  -lcs50 mario.c -g -o mario -O3
  */
