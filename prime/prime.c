@@ -38,7 +38,7 @@ bool prime(int number)
 {
     /* one factor must be less than or equal to sqrt(prime) */
     bool is_prime = true;
-    int loop_max = round(sqrt((float) number));
+    int loop_max = round(sqrt((double) number));
     /* printf("Loop max for %i is %i\n", number, loop_max); */
     for (int i = loop_max; i >= 2; i--)
     {
