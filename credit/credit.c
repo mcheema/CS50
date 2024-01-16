@@ -3,7 +3,7 @@
 
 /*
   Build Instructions: 
-  clang -std=c99 -Wall -Wextra  -lcs50 credit.c -g -o credit -O3
+  CFLAGS=-lcs50  make credit
  */
 
 #include <cs50.h>
