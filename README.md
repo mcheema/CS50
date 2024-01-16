@@ -9,7 +9,7 @@ https://github.com/jimgar/c-study-group/tree/main
 
 ## Glossary
 ### Operators
-1. `=`: Is eithr a) an Initialiser when part of a _declaration_ or b) assignment operator when part of an expression.
+1. `=`: Is either a) an Initialiser when part of a _declaration_ or b) assignment operator when part of an expression.
 ### Preprocessor Directive (AKA macro)
 1. #include _filename_ - inserts the contents of _filename_ into this file
 2. #define _macroname_ _definition_ - creates a symbolic constant _macroname_ and replaces each instance of it with _definition_
