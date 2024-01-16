@@ -2,10 +2,10 @@
 /* This file conforms to C99 */
 
 /*
+  check50 s50/problems/2024/x/mario/more
   Build Instructions: 
   clang -std=c99 -Wall -Wextra  -lcs50 mario.c -g -o mario -O3
  */
-
 
 #include <cs50.h>
 #include <stdio.h>
@@ -17,11 +17,12 @@
 void print_row(int row, int height);
 int main(void)
 {
-    int height = get_int("How tall is the pyramid? (please enter a number between %i and %i): ", MINHEIGHT, MAXHEIGHT);
-    while (height > MAXHEIGHT || height < MINHEIGHT)
+    int height;
+    do
     {
         height = get_int("How tall is the pyramid? (please enter a number between %i and %i): ", MINHEIGHT, MAXHEIGHT);
     }
+    while (height > MAXHEIGHT || height < MINHEIGHT);
 
     for (int i = 0; i < height; i++)
     {
