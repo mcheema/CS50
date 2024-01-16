@@ -5,6 +5,7 @@ This repository is to share my submissions, alternate implementations, and notes
 https://github.com/EllaKaye/cs50/
 https://github.com/jimgar/c-study-group/tree/main
 
+
 ## Glossary
 ### Preprocessor Directive (AKA macro)
 1. #include _filename_ - inserts the contents of _filename_ into this file
