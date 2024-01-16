@@ -67,7 +67,7 @@ int main(void)
                     strcpy(output, "INVALID");
                 break;
             case '3':
-                /* switch to filter valid AMEX numbers */
+                /* switch on the second digit to filter valid AMEX numbers */
                 switch (digits[1])
                 {
                     case '4':
@@ -83,7 +83,7 @@ int main(void)
                 }
                 break;
             case '5':
-                /* switch to filter valid Mastercard numbers */
+                /* switch on the second digit to filter valid Mastercard numbers */
                 switch (digits[1])
                 {
                     case '1':
