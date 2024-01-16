@@ -11,12 +11,18 @@
 #include <string.h>
 
 #define MAX_DIGITS 19 /* get_long ensures that we have a valid long  */
-#define VALUE(digit) (digit - '0')
+#define VALUE(digit) ((digit) - '0') /* Convert the digit ascii code to the digit's value  */
 #define ZERO '0'
 
 int main(void)
 {
-    /* get card number from the user */
+    /*
+      get card number from the user using get_long.
+      Pros of using get_long:
+      most bad inputs from the user are automatically handled
+      Cons:
+      leading zeros are ignored. In this case if card numbers could begin with zero this would be an issue.
+     */
     long card_number = get_long("Please Enter the Credit Card number: ");
 
     /* Implement Luhn's Algorithm */
