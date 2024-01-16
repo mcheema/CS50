@@ -7,12 +7,6 @@
 int main(void)
 {
     long card_number = get_long("Please Enter the Credit Card number: ");
-    /* First test: Is it a positive number */
-    if (card_number < 0)
-    {
-        printf("INVALID\n");
-        return 0;
-    }
     /* Implement Luhn's Algorithm */
     char digits[MAX_DIGITS + 1];
     sprintf(digits, "%ld", card_number);
