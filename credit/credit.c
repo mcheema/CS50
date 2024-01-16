@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX_DIGITS 19 /* get_long ensures that we have a valid long  */
+#define MAX_DIGITS 19                /* get_long ensures that we have a valid long  */
 #define VALUE(digit) ((digit) - '0') /* Convert the digit ascii code to the digit's value  */
 #define ZERO '0'
 
@@ -40,7 +40,9 @@ int main(void)
         sprintf(prodstr, "%i", prod);
         int len = strlen(prodstr);
         for (int j = 0; j < len; j++)
-        cumsum += VALUE(prodstr[j]);
+        {
+            cumsum += VALUE(prodstr[j]);
+        }
     }
 
     /* for every other digit beginning with the last */
@@ -60,7 +62,6 @@ int main(void)
         switch (digits[0])
         {
             case '4':
-            /* switch to filter valid VISA numbers */
                 if (n == 13 || n == 16)
                     strcpy(output, "VISA");
                 else
