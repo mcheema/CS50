@@ -1,0 +1,10 @@
+*~
+.*~
+#*
+.#*
+*.out
+*.dSYM/
+a.out
+*.log
+*.aux
+*.pdf
