@@ -1,6 +1,6 @@
 # CS50
 ## Introduction
-This repository is to share my submissions, alternate implemetations, and notes for 2023 and 2024 iterations of Harvard's CS50 project.
+This repository is to share my submissions, alternate implementations, and notes for 2023 and 2024 iterations of Harvard's CS50 project.
 
 ## Glossary
 ### Preprocessor Directive (AKA macro)
