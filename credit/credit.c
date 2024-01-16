@@ -47,7 +47,7 @@ int main(void)
         switch (digits[0])
         {
             case '4':
-
+            /* switch to filter valid VISA numbers */
                 if (n == 13 || n == 16)
                     strcpy(output, "VISA");
                 else
