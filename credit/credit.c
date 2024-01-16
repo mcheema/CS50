@@ -52,7 +52,7 @@ int main(void)
     char sumstr[4];
     sprintf(sumstr, "%i", cumsum);
     int len = strlen(sumstr);
-    char output[11]; /* big enough for MASTERCARD */
+    char output[11]; /* big enough for "MASTERCARD" */
     /* Conditional which tests whether Luhn's Algorithm Passed */
     if (sumstr[len - 1] == ZERO)
     { /* Branch corresponding to VALID from Luhn's Algorithm */
