@@ -1,7 +1,7 @@
 # CS50
 ## Introduction
-This repository is to share my submissions, alternate implementations, and notes for 2023 and 2024 iterations of Harvard's CS50 project. This work is done as part of the Q1, 2024, C study group organised by the R Core.
-## Other Repositories from the R-core bookclub: c study group 2024
+This repository is to share my submissions, alternate implementations, and notes for 2023 and 2024 iterations of Harvard's CS50 project. This work is done as part of the Q1, 2024, C study group organised by the R Core contributors team.
+## Other Repositories from the R-core Bookclub: c study group 2024
 
 1. https://github.com/EllaKaye/cs50/
 2. https://github.com/jimgar/c-study-group/tree/main
