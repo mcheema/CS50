@@ -4,10 +4,11 @@ This repository is to share my submissions, alternate implementations, and notes
 ## Other Repositories from the R-core Bookclub: c study group 2024
 
 1. [Ella Kaye](https://github.com/EllaKaye/cs50/)
-2. [Jim Gardner](https://github.com/jimgar/c-study-group/tree/main)
+   2. [Jim Gardner](https://github.com/jimgar/c-study-group/tree/main)
 
 ## Lecture 1 Takeaways
 Main problem featured [Luhn's Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm)
+Main learning outcomes were understanding data types, magic numbers, boolean expressions. looping, conditionals.
 
 C language semantics will truncate any double or float assigned/cast to an integer. This built in feature was highlighted in the learning materials and expected be exploited in the problem set. provides a *trunc* function out of the box. Which avoids some gotchas that relying on language semantics has. Also, *trunc* and *floor*, another function provided by "math.h", are almost identical except in the case of negative numbers which can lead to another type of gotcha when the full domain of reals is possible (edited) 
 

@@ -40,12 +40,17 @@ bool prime(int number)
     bool is_prime = true;
     int loop_max = round(sqrt((double) number));
     /* printf("Loop max for %i is %i\n", number, loop_max); */
+    if ( number == 1)
+    {
+        return false;
+    }
     for (int i = loop_max; i >= 2; i--)
     {
         if ((number % i) == 0) /* Is i a factor? */
         {
             /* printf("%i is a factor of %i", i, number); */
             is_prime = false;
+            return false;
         }
     }
 

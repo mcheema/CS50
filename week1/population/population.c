@@ -14,6 +14,7 @@
 
 int main(void)
 {
+    
     long start_size;
     do
     {
