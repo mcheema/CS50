@@ -4,7 +4,7 @@ This repository is to share my submissions, alternate implementations, and notes
 ## Other Repositories from the R-core Bookclub: c study group 2024
 
 1. [Ella Kaye](https://github.com/EllaKaye/cs50/)
-   2. [Jim Gardner](https://github.com/jimgar/c-study-group/tree/main)
+2. [Jim Gardner](https://github.com/jimgar/c-study-group/tree/main)
 
 ## Lecture 1 Takeaways
 Main problem featured [Luhn's Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm)
@@ -37,5 +37,5 @@ This term is used loosely to encompass four sequential steps:
 
 ### Preprocessor Directive (AKA macro)
 1. #include _filename_ - inserts the contents of _filename_ into this file
-2. #define _macroname_ _definition_ - creates a symbolic constant _macroname_ and replaces each instance of it with _definition_
+2. #define _macroname_ _definition_ - creates a symbolic constant _macroname_ and replaces each subsequent instance of it with _definition_
 
