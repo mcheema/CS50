@@ -34,8 +34,16 @@ This term is used loosely to encompass four sequential steps:
 
 ### Operators
 1. `=`: Is either a) an Initialiser when part of a _declaration_ or b) assignment operator when part of an expression.
+2. `+=`, `-=`, `*=`, `/=`, `%=`: Compound Assignment Operators are at a very low precedence level. eg. `a *= 2 + 3` evaluates to `a = a*5`
 
 ### Preprocessor Directive (AKA macro)
 1. #include _filename_ - inserts the contents of _filename_ into this file
 2. #define _macroname_ _definition_ - creates a symbolic constant _macroname_ and replaces each subsequent instance of it with _definition_
+3. The directives are not supposed to be terminated with `;` semicolons.
 
+### Typecasting
+1. _Typecasting_ is used to temporarily covert an expression to a value to compute the correct result. eg `float a = (float) 5U` or `long b = (long)(10 + b)` where be is a variable of type int.
+
+### Functions
+1. _Function Prototypes_ are a type of declaration that allows  a function to be used before it is defined.
+2. Functions consist of an identifier a return type and an agrgument list. eg `int power(int a) {return a * a;}`
