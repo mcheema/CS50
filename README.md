@@ -5,6 +5,7 @@ This repository is to share my submissions, alternate implementations, and notes
 
 1. [Ella Kaye](https://github.com/EllaKaye/cs50/)
 2. [Jim Gardner](https://github.com/jimgar/c-study-group/tree/main)
+3. [C-study-group official](https://github.com/r-devel/c-study-group/tree/main)
 
 ## Lecture 1 Takeaways
 Main problem featured [Luhn's Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm)
@@ -13,7 +14,6 @@ Main learning outcomes were understanding data types, magic numbers, boolean exp
 C language semantics will truncate any double or float assigned/cast to an integer. This built in feature was highlighted in the learning materials and expected be exploited in the problem set. provides a *trunc* function out of the box. Which avoids some gotchas that relying on language semantics has. Also, *trunc* and *floor*, another function provided by "math.h", are almost identical except in the case of negative numbers which can lead to another type of gotcha when the full domain of reals is possible (edited) 
 
 ## Lecture 2 Takeaways
-
 
 In the Section tutorial the instructor misspoke and asserted that if the initialiser of an array is incomplete then the uninitialised part of the array would be filled with garbage values. In the [C99 standard](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf) though they would be set to 0:
 
