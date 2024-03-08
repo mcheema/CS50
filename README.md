@@ -19,6 +19,14 @@ In the Section tutorial the instructor misspoke and asserted that if the initial
 
 > If there are fewer initializers in a brace-enclosed list than there are elements or members of an aggregate, or fewer characters in a string literal used to initialize an array of known size than there are elements in the array, the remainder of the aggregate shall be initialized implicitly the same as objects that have static storage duration.
 
+Arguments by functions are passed by value except in the case of arrays where they are passed by reference.
+
+Variables can have either local scope or global scope.
+
+Command line arguments and their use.
+
+Topics covered in the lecture and the problem sets were: quantifying readability of texts and we implementated the Coleman-Liao index; and ciphers and the use of key to enchipher text.
+
 ## Glossary
 
 ### Compiling
@@ -47,3 +55,7 @@ This term is used loosely to encompass four sequential steps:
 ### Functions
 1. _Function Prototypes_ are a type of declaration that allows  a function to be used before it is defined.
 2. Functions consist of an identifier a return type and an agrgument list. eg `int power(int a) {return a * a;}`
+
+### Function Parameters
+1. Typically "passed by value"
+2. Except arrays which are "passed by reference"
