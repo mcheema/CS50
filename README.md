@@ -27,6 +27,9 @@ Command line arguments and their use.
 
 Topics covered in the lecture and the problem sets were: quantifying readability of texts and we implementated the Coleman-Liao index; and ciphers and the use of key to enchipher text.
 
+## Lecture 3 Takeaways
+Introduced Big Oh and Big &Omega notation for worst case and best case 
+
 ## Glossary
 
 ### Compiling
@@ -59,3 +62,23 @@ This term is used loosely to encompass four sequential steps:
 ### Function Parameters
 1. Typically "passed by value"
 2. Except arrays which are "passed by reference"
+
+### Struct
+CS50 prefers the use of the following style definition of a struct:
+```c
+typedef
+struct
+{
+    string name; // member of the struct
+    int votes;
+}
+candidate;
+```
+It think I still prefer the more verbose:
+    ```c
+struct candidate
+{
+    string name;
+    int votes;
+};
+```
